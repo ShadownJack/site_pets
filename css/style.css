@@ -1,0 +1,486 @@
+:root {
+    --cor-fundo: #F3F4F6;
+    --cor-branco: #FFFFFF;
+    --cor-roxo: #653D96;
+    --cor-roxo-escuro: #4C1491;
+    --cor-roxo-rodape: #6133A4;
+    --cor-roxo-filtro: #6133A4;
+    --cor-cinza: #77777A;
+    --cor-cinza-borda: #A4A4A7;
+    --cor-laranja: #F8A836;
+    --cor-preto: #000000;
+    --cor-sombra: rgba(0, 0, 0, 0.25);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 1440px;
+    background: var(--cor-fundo);
+    font-family: "Open Sans", sans-serif;
+    color: var(--cor-preto);
+}
+
+.pagina {
+    box-sizing: border-box;
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+    background: var(--cor-fundo);
+    border: 1px solid var(--cor-cinza-borda);
+    overflow: hidden;
+}
+
+/* ==================== CABEÇALHO (top: 0 | height: 92px) ==================== */
+
+.cabecalho {
+    width: 1440px;
+    height: 92px;
+    background: var(--cor-branco);
+    border-bottom: 1px solid var(--cor-cinza-borda);
+}
+
+.cabecalho__conteudo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 127px;
+    padding-right: 155px;
+}
+
+.cabecalho__logo {
+    width: 200px;
+    height: 61px;
+    display: block;
+}
+
+.cabecalho__logo img {
+    width: 200px;
+    height: 61px;
+    object-fit: contain;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    gap: 36px;
+}
+
+.navegacao a,
+.acesso a {
+    color: var(--cor-roxo);
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+.navegacao a {
+    font-weight: 700;
+}
+
+.acesso {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.acesso a {
+    font-weight: 400;
+}
+
+.botao--doe {
+    width: 172px;
+    height: 50px;
+}
+
+/* ==================== BOTÕES ==================== */
+
+.botao {
+    height: 50px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+
+.botao--roxo {
+    background: var(--cor-roxo);
+    color: var(--cor-branco) !important;
+}
+
+.botao--borda {
+    background: var(--cor-branco);
+    border: 1px solid var(--cor-roxo);
+    color: var(--cor-roxo) !important;
+}
+
+.botao--borda-laranja {
+    width: 148px;
+    height: 45px;
+    background: var(--cor-branco);
+    border: 1px solid var(--cor-laranja);
+    border-radius: 8px;
+    color: var(--cor-roxo) !important;
+    font-size: 16px;
+}
+
+/* ==================== BANNER E AÇÕES (top: 124px a 466px) ==================== */
+
+.inicio {
+    width: 1144px;
+    margin: 32px auto 0;
+}
+
+.banner {
+    position: relative;
+    width: 1144px;
+    height: 260px;
+    border-radius: 16px;
+    background: url("assets/banner_doacao.png") center center / cover no-repeat;
+}
+
+.banner h1 {
+    position: absolute;
+    left: 30px;
+    top: 42px;
+    width: 189px;
+    height: 176px;
+    margin: 0;
+    color: var(--cor-roxo-escuro);
+    font-family: "Patua One", serif;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 400;
+}
+
+.banner__direita {
+    position: absolute;
+    right: 42px;
+    top: 42px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.banner__direita p {
+    width: 400px;
+    height: 99px;
+    margin: 0;
+    color: var(--cor-preto);
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 700;
+}
+
+.botao--doacao {
+    width: 172px;
+    margin-top: 27px;
+}
+
+.botoes-adocao {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.botoes-adocao .botao {
+    width: 566px;
+}
+
+/* ==================== ANIMAIS (top: 530px a 1567px) ==================== */
+
+.secao-animais {
+    width: 1144px;
+    margin: 64px auto 0;
+}
+
+.secao-animais h2,
+.secao-motivos h2,
+.secao-blog h2 {
+    color: var(--cor-roxo);
+    font-family: "Patua One", serif;
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 400;
+}
+
+.animais__linha-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 34px;
+}
+
+.descricao-animais {
+    width: 675px;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+.filtros {
+    display: flex;
+    gap: 28px;
+}
+
+.filtros a {
+    color: var(--cor-roxo-filtro);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.grade-animais {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 273px);
+    justify-content: space-between;
+    row-gap: 32px;
+}
+
+.cartao-animal {
+    position: relative;
+    width: 273px;
+    height: 353px;
+    border-radius: 16px;
+    background: var(--cor-branco);
+    box-shadow: 0 4px 4px var(--cor-sombra);
+    overflow: hidden;
+}
+
+.cartao-animal > img {
+    width: 273px;
+    height: 259px;
+    display: block;
+    object-fit: cover;
+}
+
+.cartao-animal__informacoes {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 273px;
+    height: 94px;
+    padding: 16px 15px;
+    background: var(--cor-branco);
+    border-radius: 0 0 16px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cartao-animal__informacoes h3 {
+    color: var(--cor-roxo);
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 700;
+}
+
+.cartao-animal__informacoes p {
+    color: var(--cor-cinza);
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+}
+
+.botao--pesquisar {
+    width: 280px;
+    display: flex;
+    margin: 32px auto 0;
+}
+
+/* ==================== MOTIVOS (top: 1631px a 1865px) ==================== */
+
+.secao-motivos {
+    width: 1144px;
+    margin: 64px auto 0;
+}
+
+.grade-motivos {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    justify-content: space-between;
+}
+
+.cartao-motivo {
+    width: 370px;
+    height: 163px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 12px 15px;
+    background: var(--cor-branco);
+    border: 1px solid var(--cor-laranja);
+    border-radius: 8px;
+}
+
+.cartao-motivo img {
+    width: 103px;
+    height: 140px;
+    object-fit: contain;
+}
+
+.cartao-motivo p {
+    color: var(--cor-roxo);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+/* ==================== BLOG (top: 1929px a 2672px) ==================== */
+
+.secao-blog {
+    width: 1144px;
+    margin: 64px auto 0;
+}
+
+.descricao-blog {
+    margin-top: 8px;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+.grade-blog {
+    margin-top: 67px;
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    justify-content: space-between;
+}
+
+.cartao-blog {
+    width: 370px;
+    height: 485px;
+    background: var(--cor-branco);
+    border-radius: 8px;
+    box-shadow: 0 4px 4px var(--cor-sombra);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.cartao-blog > img {
+    width: 370px;
+    height: 190px;
+    display: block;
+    object-fit: cover;
+}
+
+.cartao-blog__conteudo {
+    padding: 16px 11px;
+    display: flex;
+    flex-direction: column;
+    height: 295px;
+}
+
+.cartao-blog__conteudo h3 {
+    color: var(--cor-roxo);
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.cartao-blog__conteudo p {
+    color: var(--cor-cinza-borda);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    flex-grow: 1;
+}
+
+.cartao-blog__conteudo .botao {
+    margin: 0 auto;
+}
+
+.botao--dicas {
+    width: 280px;
+    display: flex;
+    margin: 67px auto 0;
+}
+
+/* ==================== RODAPÉ (top: 2762px | height: 380px) ==================== */
+
+.rodape {
+    width: 1440px;
+    height: 380px;
+    margin-top: 90px;
+    background: var(--cor-roxo-rodape);
+    color: var(--cor-branco);
+    padding-top: 37px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.rodape__colunas {
+    width: 1144px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape__coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape__coluna strong {
+    margin-bottom: 6px;
+    color: var(--cor-branco);
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 700;
+}
+
+.rodape__coluna a {
+    color: var(--cor-branco);
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+
+.rodape__redes {
+    display: flex;
+    gap: 18px;
+    margin-top: 40px;
+    margin-bottom: 18px;
+}
+
+.rodape__redes img {
+    width: 32px;
+    height: 32px;
+}
+
+.rodape__logo {
+    width: 256px;
+    height: 75px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.rodape__direitos {
+    color: var(--cor-branco);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}

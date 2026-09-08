@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdotaPet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Patua+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="pagina">
+
+        <!-- CABEÇALHO -->
+        <header class="cabecalho">
+            <div class="cabecalho__conteudo">
+                <a href="#" class="cabecalho__logo">
+                    <img src="./assets/logo.png" alt="AdotaPet">
+                </a>
+
+                <nav class="navegacao">
+                    <a href="#sobre">quem somos</a>
+                    <a href="#adotar">quero adotar</a>
+                    <a href="#parcerias">parcerias</a>
+                    <a href="#blog">blog</a>
+                </nav>
+
+                <div class="acesso">
+                    <a href="#doacao" class="botao botao--roxo botao--doe">DOE &amp; AJUDE</a>
+                    <a href="#">entrar</a>
+                    <a href="#">cadastre-se</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- BANNER E BOTÕES PRINCIPAIS -->
+            <section class="inicio" id="doacao">
+                <div class="banner">
+                    <h1>Faça a<br>diferença<br>sem sair de<br>casa!</h1>
+
+                    <div class="banner__direita">
+                        <p><b> Se você acha que todo animal de rua merece um lar</b>, doe agora e ajude a manter o nosso trabalho.</p>
+                        <a href="#" class="botao botao--roxo botao--doacao">QUERO AJUDAR</a>
+                    </div>
+                </div>
+
+                <div class="botoes-adocao">
+                    <a href="#adotar" class="botao botao--roxo">Quero adotar</a>
+                    <a href="#" class="botao botao--borda">Quero divulgar um animal</a>
+                </div>
+            </section>
+
+            <!-- ANIMAIS PARA ADOÇÃO -->
+            <section class="secao-animais" id="adotar">
+                <h2>Encontre o seu mais novo amigo aqui!</h2>
+
+                <div class="animais__linha-topo">
+                    <p class="descricao-animais">
+                        Nosso site está cheio de doguinhos e gatinhos ansiosos por uma família.<br>Vem ver!
+                    </p>
+
+                    <div class="filtros">
+                        <a href="#">Mais recentes</a>
+                        <a href="#">Mais antigos</a>
+                        <a href="#">Mais vistos</a>
+                        <a href="#">Menos vistos</a>
+                    </div>
+                </div>
+
+                <div class="grade-animais">
+                    <!-- Linha 1 -->
+                    <article class="cartao-animal">
+                        <img src="./assets/lili.png" alt="Lili">
+                        <div class="cartao-animal__informacoes">
+                            <h3>Lili</h3>
+                            <p>Osasco, SP</p>
+                        </div>
+                    </article>
+
+                    <article class="cartao-animal">
+                        <img src="./assets/melany.png" alt="Melany">
+                        <div class="cartao-animal__informacoes">
+                            <h3>Melany</h3>
+                            <p>São José dos Campos, SP</p>
+                        </div>
+                    </article>
+
+                    <article class="cartao-animal">
+                        <img src="./assets/pretinho.png" alt="Pretinho">
+                        <div class="cartao-animal__informacoes">
+                            <h3>Pretinho</h3>
+                            <p>Santana de Parnaíba, SP</p>
+                        </div>
+                    </article>
+
+                    <article class="cartao-animal">
+                        <img src="./assets/sara.png" alt="Sara">
+                        <div class="cartao-animal__informacoes">
+                            <h3>Sara</h3>
+                            <p>Itapevi, SP</p>
+                        </div>
+                    </article>
+
+                    <!-- Linha 2 -->
+                    <article class="cartao-animal">
+                        <img src="./assets/lili.png" alt="Lili">
+                        <div class="cartao-animal__informacoes">
+                            <h3>Lili</h3>
+                            <p>Osasco, SP</p>
+                        </div>
+                    </article>
+
+                    <article class="cartao-animal">
+                        <img src="./assets/melany.png" alt="Melany">
+                        <div class="cartao-animal__informacoes">
+                            <h3>Melany</h3>
+                            <p>São José dos Campos, SP</p>
+                        </div>
+                    </article>
+
+                    <article class="cartao-animal">
+                        <img src="./assets/pretinho.png" alt="Pretinho">
+                        <div class="cartao-animal__informacoes">
+                            <h3>Pretinho</h3>
+                            <p>Santana de Parnaíba, SP</p>
+                        </div>
+                    </article>
+
+                    <article class="cartao-animal">
+                        <img src="./assets/sara.png" alt="Sara">
+                        <div class="cartao-animal__informacoes">
+                            <h3>Sara</h3>
+                            <p>Itapevi, SP</p>
+                        </div>
+                    </article>
+                </div>
+
+                <a href="#" class="botao botao--borda botao--pesquisar">pesquisar bichos</a>
+            </section>
+
+            <!-- MOTIVOS -->
+            <section class="secao-motivos" id="sobre">
+                <h2>Por que adotar?</h2>
+
+                <div class="grade-motivos">
+                    <article class="cartao-motivo">
+                        <img src="./assets/humano_cachorro.png" alt="Cachorro com humano">
+                        <p>Nesse exato momento, existem milhares de doguinhos e gatinhos esperando um humano para chamar de seu.</p>
+                    </article>
+
+                    <article class="cartao-motivo">
+                        <img src="./assets/humano_gato.png" alt="Gato com humano">
+                        <p>E não há recompensa maior do que vê-los se tornando aquela coisinha alegre e saudável depois de uma boa dose de cuidado e carinho.</p>
+                    </article>
+
+                    <article class="cartao-motivo">
+                        <img src="./assets/humano_cachorro2.png" alt="Cachorro com humano">
+                        <p>Pensando bem, a pergunta é outra: se você pode mudar o destino de um animal de rua, por que não faria isso?</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- BLOG -->
+            <section class="secao-blog" id="blog">
+                <h2>Blog do AdotaPet</h2>
+                <p class="descricao-blog">Veja nossas últimas dicas sobre cuidados com seu pet</p>
+
+                <div class="grade-blog">
+                    <article class="cartao-blog">
+                        <img src="./assets/cachorro_escrevendo.png" alt="Cachorro escrevendo">
+                        <div class="cartao-blog__conteudo">
+                            <h3>Como você cuida dos seus animais?</h3>
+                            <p>Olá, amigos! Desde 2012, conectamos mais de 12 mil cães e gatos a pessoas que queriam um novo amigo para chamar de seu. Agora, precisamos aprender como cuidar...</p>
+                            <a href="#" class="botao botao--borda-laranja">LER MAIS</a>
+                        </div>
+                    </article>
+
+                    <article class="cartao-blog">
+                        <img src="./assets/img2025.png" alt="Retrospectiva 2025">
+                        <div class="cartao-blog__conteudo">
+                            <h3>Nossa retrospectiva 2025 está demais!</h3>
+                            <p>Olá, amigos! Desde 2012, conectamos mais de 12 mil cães e gatos a pessoas que queriam um novo amigo para chamar de seu. Agora, precisamos aprender como cuidar...</p>
+                            <a href="#" class="botao botao--borda-laranja">LER MAIS</a>
+                        </div>
+                    </article>
+
+                    <article class="cartao-blog">
+                        <img src="./assets/gato_preto.png" alt="Gato preto">
+                        <div class="cartao-blog__conteudo">
+                            <h3>Fizemos uma Black Friday de ajuda aos animais</h3>
+                            <p>Olá, amigos! Desde 2012, conectamos mais de 12 mil cães e gatos a pessoas que queriam um novo amigo para chamar de seu. Agora, precisamos aprender como cuidar...</p>
+                            <a href="#" class="botao botao--borda-laranja">LER MAIS</a>
+                        </div>
+                    </article>
+                </div>
+
+                <a href="#" class="botao botao--borda botao--dicas">Ver todas as dicas</a>
+            </section>
+        </main>
+
+        <!-- RODAPÉ -->
+        <footer class="rodape" id="parcerias">
+            <div class="rodape__colunas">
+                <div class="rodape__coluna">
+                    <strong>ADOTE</strong>
+                    <a href="#">Adote com responsabilidade</a>
+                    <a href="#">Pesquisar animais</a>
+                </div>
+
+                <div class="rodape__coluna">
+                    <strong>COLABORE</strong>
+                    <a href="#">Doe qualquer valor</a>
+                    <a href="#">Seja uma Empresa Parceira</a>
+                </div>
+
+                <div class="rodape__coluna">
+                    <strong>DIVULGUE UM ANIMAL</strong>
+                    <a href="#">Cadastrar um animal</a>
+                </div>
+
+                <div class="rodape__coluna">
+                    <strong>SOBRE A ADOTAPET</strong>
+                    <a href="#">Sobre a AdotaPet</a>
+                    <a href="#">Perguntas Frequentes</a>
+                    <a href="#">Termo de uso e Política de Privacidade</a>
+                </div>
+
+                <div class="rodape__coluna">
+                    <strong>PERFIL</strong>
+                    <a href="#">Minha página de perfil</a>
+                    <a href="#">Cadastre-se</a>
+                </div>
+            </div>
+
+            <div class="rodape__redes">
+                <a href="#"><img src="./assets/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="./assets/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="./assets/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="./assets/youtube.png" alt="YouTube"></a>
+            </div>
+
+            <img class="rodape__logo" src="./assets/logo_branco.png" alt="AdotaPet">
+            <p class="rodape__direitos">Todos os direitos reservados</p>
+        </footer>
+
+    </div>
+</body>
+</html>
